@@ -1,114 +1,124 @@
 # MATLAB
 ## note.m
-´ËÎÄ¼þÎª±¾ÈËÔÚ´óÑ§Ñ§Ï°MATLABÈí¼þÁ½ÄêÒÔÀ´ÕûÀíµÄ²¿·Ö±Ê¼Ç£¨²ÉÓÃmarkdownÓïÑÔ±àÐ´£¬Typoraµ¼³ö³Épdf£©£¬ÁÙ½ü±ÏÒµÖ®¼Ê¿ªÔ´ÖÁgithubÉÏÒÔ¹©¸÷Î»Ñ§Ï°~~Òò±¾ÈËÎª·Çcs×¨ÒµÓë×¨ÃÅÑ§Ï°MATLABµÄÑ§Éú£¬±Ê¼ÇÖÐÈçÓÐÊèÂ©»¹Çë¸÷Î»Ö¸Õý£¬µÚÒ»´Î¿ªÔ´ÎÄ¼þ²»Ì«æµÊì£¬»¹´ó¼ÒÁÂ½â£¡
+æ­¤æ–‡ä»¶ä¸ºæœ¬äººåœ¨å¤§å­¦å­¦ä¹ MATLABè½¯ä»¶ä¸¤å¹´ä»¥æ¥æ•´ç†çš„éƒ¨åˆ†ç¬”è®°ï¼ˆé‡‡ç”¨markdownè¯­è¨€ç¼–å†™ï¼ŒTyporaå¯¼å‡ºæˆpdfï¼‰ï¼Œä¸´è¿‘æ¯•ä¸šä¹‹é™…å¼€æºè‡³githubä¸Šä»¥ä¾›å„ä½å­¦ä¹ ~~å› æœ¬äººä¸ºéžcsä¸“ä¸šä¸Žä¸“é—¨å­¦ä¹ MATLABçš„å­¦ç”Ÿï¼Œç¬”è®°ä¸­å¦‚æœ‰ç–æ¼è¿˜è¯·å„ä½æŒ‡æ­£ï¼Œç¬¬ä¸€æ¬¡å¼€æºæ–‡ä»¶ä¸å¤ªå¨´ç†Ÿï¼Œè¿˜å¤§å®¶è°…è§£ï¼
 ## GA_TSP 
-**ÎÊÌâÃèÊö£º** Ò»¹²8¸ö³ÇÊÐ£¬´ÓÆðµã³ÇÊÐ`A`±éÀúÆäËûËùÓÐ³ÇÊÐºó»Øµ½ÖÕµã³ÇÊÐ`H`£¬Ñ°ÇóÒ»ÌõÂ·¾¶Ê¹µÃ×ÜÂ·³Ì×î¶Ì£¨ÏêÏ¸µÄÊýÑ§Ä£ÐÍÔÚ`ÂÃÐÐÉÌ¹æ»®.doc`ÖÐ£©
+**é—®é¢˜æè¿°ï¼š** ä¸€å…±8ä¸ªåŸŽå¸‚ï¼Œä»Žèµ·ç‚¹åŸŽå¸‚`A`éåŽ†å…¶ä»–æ‰€æœ‰åŸŽå¸‚åŽå›žåˆ°ç»ˆç‚¹åŸŽå¸‚`H`ï¼Œå¯»æ±‚ä¸€æ¡è·¯å¾„ä½¿å¾—æ€»è·¯ç¨‹æœ€çŸ­ï¼ˆè¯¦ç»†çš„æ•°å­¦æ¨¡åž‹åœ¨`æ—…è¡Œå•†è§„åˆ’.doc`ä¸­ï¼‰
 
-**±àÂë·½Ê½£º** ´úÂëÖÐÓÃ`1`´ú±í³ÇÊÐ`A`¡¢`2`´ú±í³ÇÊÐ`H`£¬eg.`1->2->3->4->5->6->7->8`´ú±íÂ·¾¶`A->B->C->D->E->F->G->H`
+**ç¼–ç æ–¹å¼ï¼š** ä»£ç ä¸­ç”¨`1`ä»£è¡¨åŸŽå¸‚`A`ã€`2`ä»£è¡¨åŸŽå¸‚`H`ï¼Œeg.`1->2->3->4->5->6->7->8`ä»£è¡¨è·¯å¾„`A->B->C->D->E->F->G->H`
 
 
-**º¯Êý½âÊÍ£º**
-+ `main` : Ö÷º¯ÊýÎÄ¼þ
-+ `data.mat` : 8¸ö³ÇÊÐÖ®¼äµÄ¾àÀë¾ØÕó
-+ `cross` : ½»²æ²Ù×÷£¬
-+ `mutate` : ±äÒì²Ù×÷£¬Á½µã±äÒì
-+ `obj`: ÊÊÓ¦¶Èº¯Êý£¬Ò»ÌõÂ·¾¶×ÜÂ·³Ì¼ÆËã
-+ `popinit` : ³õÊ¼»¯ÖÖÈº
-+ `tourment_Select` : ½õ±êÈüÑ¡Ôñ»úÖÆ
-+ `ÂÃÐÐÉÌ¹æ»®.doc` £º ¾ßÌåÊýÑ§Ä£ÐÍ
-+ `test_qiongju` : __Çî¾ÙÑéÖ¤__
+**å‡½æ•°è§£é‡Šï¼š**
++ `main` : ä¸»å‡½æ•°æ–‡ä»¶
++ `data.mat` : 8ä¸ªåŸŽå¸‚ä¹‹é—´çš„è·ç¦»çŸ©é˜µ
++ `cross` : äº¤å‰æ“ä½œï¼Œ
++ `mutate` : å˜å¼‚æ“ä½œï¼Œä¸¤ç‚¹å˜å¼‚
++ `obj`: é€‚åº”åº¦å‡½æ•°ï¼Œä¸€æ¡è·¯å¾„æ€»è·¯ç¨‹è®¡ç®—
++ `popinit` : åˆå§‹åŒ–ç§ç¾¤
++ `tourment_Select` : é”¦æ ‡èµ›é€‰æ‹©æœºåˆ¶
++ `æ—…è¡Œå•†è§„åˆ’.doc` ï¼š å…·ä½“æ•°å­¦æ¨¡åž‹
++ `test_qiongju` : __ç©·ä¸¾éªŒè¯__
 
-**½á¹ûÏÔÊ¾£º**
-GAÔËÐÐµÄ½á¹û
+**ç»“æžœæ˜¾ç¤ºï¼š**
+GAè¿è¡Œçš„ç»“æžœ
+
 <img src="./resource/ga_tsp1.png" width="50%">
 <img src="./resource/ga_tsp2.png" width="50%">
 
-Çî¾ÙÑéÖ¤µÄ½á¹û
+ç©·ä¸¾éªŒè¯çš„ç»“æžœ
+
 <img src="./resource/ga_tsp3.png" width="50%">
 
 ## GA_BP
-**ÎÊÌâÃèÊö£º** GAÓÅ»¯BP½øÐÐÔ¤²â£¬Ñù±¾Á¿Êý¾ÝÎª72×é£¬Ô¤²âÊý¾ÝÎª18×é£¬£¨²¿·Öº¯ÊýµÄÊ¹ÓÃÐè°²×°GOAT¹¤¾ßÏä£©
+**é—®é¢˜æè¿°ï¼š** GAä¼˜åŒ–BPè¿›è¡Œé¢„æµ‹ï¼Œæ ·æœ¬é‡æ•°æ®ä¸º72ç»„ï¼Œé¢„æµ‹æ•°æ®ä¸º18ç»„ï¼Œï¼ˆéƒ¨åˆ†å‡½æ•°çš„ä½¿ç”¨éœ€å®‰è£…GOATå·¥å…·ç®±ï¼‰
 
-**º¯Êý½âÊÍ£º**
-+ `main` : Ö÷º¯ÊýÎÄ¼þ
-+ `data.mat` : Êý¾Ý¼¯£¬Ç°ÈýÁÐÎªÊäÈë±äÁ¿¡¢ºóÁùÁÐÎªÊä³ö±äÁ¿
-+ `getBPinfo` : ³õÊ¼»¯BPÍøÂç
-+ `gadecod` : ÒÅ´«Ëã·¨ÊµÊý±àÂë
-+ `gabpEval` : ÊÊÓ¦Öµ¼ÆËãº¯Êý
-+ `GOAT.zip` : GOAT¹¤¾ßÏä
+**å‡½æ•°è§£é‡Šï¼š**
++ `main` : ä¸»å‡½æ•°æ–‡ä»¶
++ `data.mat` : æ•°æ®é›†ï¼Œå‰ä¸‰åˆ—ä¸ºè¾“å…¥å˜é‡ã€åŽå…­åˆ—ä¸ºè¾“å‡ºå˜é‡
++ `getBPinfo` : åˆå§‹åŒ–BPç½‘ç»œ
++ `gadecod` : é—ä¼ ç®—æ³•å®žæ•°ç¼–ç 
++ `gabpEval` : é€‚åº”å€¼è®¡ç®—å‡½æ•°
++ `GOAT.zip` : GOATå·¥å…·ç®±
 
-**GOAT¹¤¾ßÏä°²×°²½Öè£º**
-+ 1.½âÑ¹`GOAT.zip`ÎÄ¼þ£¬²¢¼ÇÂ¼½âÑ¹ºóµÄÎ»ÖÃ
-+ 2.`Ô¤ÉèÂ·¾¶`->`Ìí¼ÓÎÄ¼þ¼Ð`->`¸´ÖÆÎ»ÖÃ²¢µã»÷GOATÎÄ¼þ¼Ð`->`±£´æ`
+**GOATå·¥å…·ç®±å®‰è£…æ­¥éª¤ï¼š**
++ 1.è§£åŽ‹`GOAT.zip`æ–‡ä»¶ï¼Œå¹¶è®°å½•è§£åŽ‹åŽçš„ä½ç½®
++ 2.`é¢„è®¾è·¯å¾„`->`æ·»åŠ æ–‡ä»¶å¤¹`->`å¤åˆ¶ä½ç½®å¹¶ç‚¹å‡»GOATæ–‡ä»¶å¤¹`->`ä¿å­˜`
+
 <img src="./resource/ga_bp0.png" width="50%">
 
-**½á¹ûÏÔÊ¾£º**
+**ç»“æžœæ˜¾ç¤ºï¼š**
+
 <img src="./resource/ga_bp1.png" width="50%">
 <img src="./resource/ga_bp2.png" width="50%">
 <img src="./resource/ga_bp3.png" width="50%">
 <img src="./resource/ga_bp4.png" width="50%">
 <img src="./resource/ga_bp5.png" width="50%">
 
-**Éñ¾­ÍøÂç¹¤¾ßÏä½âÊÍÍ¼£º**
+**ç¥žç»ç½‘ç»œå·¥å…·ç®±è§£é‡Šå›¾ï¼š**
+
 <img src="./resource/ga_bp6.png" width="50%">
 
 ## SSA
-**ÎÊÌâÃèÊö£º** Ê¹ÓÃSSAÂéÈ¸ËÑË÷Ëã·¨½øÐÐº¯ÊýÑ°ÓÅ£¬ÊäÈëÈý¸ö²ÎÊýÇÒÓÐÇø¼äÏÞÖÆ£¬Êä³öÎªÒ»¸ö¡£`main`¿ÉÒÔÕÕ×Å¿´£¬º¯ÊýµÄÁ÷³ÌÃ»ÎÊÌâµÄ£¬ÆäËûÏ¸½ÚÍü¼ÇÁË....
+**é—®é¢˜æè¿°ï¼š** ä½¿ç”¨SSAéº»é›€æœç´¢ç®—æ³•è¿›è¡Œå‡½æ•°å¯»ä¼˜ï¼Œè¾“å…¥ä¸‰ä¸ªå‚æ•°ä¸”æœ‰åŒºé—´é™åˆ¶ï¼Œè¾“å‡ºä¸ºä¸€ä¸ªã€‚`main`å¯ä»¥ç…§ç€çœ‹ï¼Œå‡½æ•°çš„æµç¨‹æ²¡é—®é¢˜çš„ï¼Œå…¶ä»–ç»†èŠ‚å¿˜è®°äº†....
 
-**º¯Êý½âÊÍ£º**
-+ `main_max` : Ö÷º¯ÊýÎÄ¼þ¡ªº¯ÊýÑ°ÓÅÕÒ×î´ó
-+ `main_min` : Ö÷º¯ÊýÎÄ¼þ¡ªº¯ÊýÑ°ÓÅÕÒ×îÐ¡
-+ `pop_init` : ³õÊ¼»¯ÖÖÈº
-+ `net.mat` : BPÉñ¾­ÍøÂçÄâºÏµÄnetÖµ£¬ÓÃÒÔ¼ÆËãÄ¿±êº¯ÊýÖµ
-+ `obj` : ÊÊÓ¦Öµ¼ÆËãº¯Êý
-+ `revise` : ÐÞÕýº¯Êý
+**å‡½æ•°è§£é‡Šï¼š**
++ `main_max` : ä¸»å‡½æ•°æ–‡ä»¶â€”å‡½æ•°å¯»ä¼˜æ‰¾æœ€å¤§
++ `main_min` : ä¸»å‡½æ•°æ–‡ä»¶â€”å‡½æ•°å¯»ä¼˜æ‰¾æœ€å°
++ `pop_init` : åˆå§‹åŒ–ç§ç¾¤
++ `net.mat` : BPç¥žç»ç½‘ç»œæ‹Ÿåˆçš„netå€¼ï¼Œç”¨ä»¥è®¡ç®—ç›®æ ‡å‡½æ•°å€¼
++ `obj` : é€‚åº”å€¼è®¡ç®—å‡½æ•°
++ `revise` : ä¿®æ­£å‡½æ•°
 
-**½á¹ûÏÔÊ¾£º**
+**ç»“æžœæ˜¾ç¤ºï¼š**
+
 <img src="./resource/ssa1.png" width="50%">
 <img src="./resource/ssa2.png" width="50%">
 
 ## GA_VRPTW
-**ÎÊÌâÃèÊö£º** Ê¹ÓÃGAËã·¨Çó½â´øÊ±¼ä´°³µÁ¾Â·¾¶ÎÊÌâ£¨vehicle routing problems with time windows£¬VRPTW£©£¬1¸öÐèÇóÖÐÐÄ£¬25¸ö¹Ë¿Í£¬Ä£ÐÍÊÇ¿Î³Ì×÷ÒµËæ±ãÐ´µÄ£¨ÏêÏ¸µÄÊýÑ§Ä£ÐÍÔÚ`VRP_GA.doc`ÖÐ£©
-**±àÂë·½Ê½£º** ´úÂëÖÐÓÃ`>25µÄÊý×Ö`´ú±í`ÅäËÍÖÐÐÄ`¡¢`1`´ú±í`ÐèÇóµã1`...£¬eg.`26->1->2->3->4->5->27->6->7->8->28`´ú±íÅäËÍÂ·¾¶`1->2->3->4->5`¡¢`6->7->8`
+**é—®é¢˜æè¿°ï¼š** ä½¿ç”¨GAç®—æ³•æ±‚è§£å¸¦æ—¶é—´çª—è½¦è¾†è·¯å¾„é—®é¢˜ï¼ˆvehicle routing problems with time windowsï¼ŒVRPTWï¼‰ï¼Œ1ä¸ªéœ€æ±‚ä¸­å¿ƒï¼Œ25ä¸ªé¡¾å®¢ï¼Œæ¨¡åž‹æ˜¯è¯¾ç¨‹ä½œä¸šéšä¾¿å†™çš„ï¼ˆè¯¦ç»†çš„æ•°å­¦æ¨¡åž‹åœ¨`VRP_GA.doc`ä¸­ï¼‰
+**ç¼–ç æ–¹å¼ï¼š** ä»£ç ä¸­ç”¨`>25çš„æ•°å­—`ä»£è¡¨`é…é€ä¸­å¿ƒ`ã€`1`ä»£è¡¨`éœ€æ±‚ç‚¹1`...ï¼Œeg.`26->1->2->3->4->5->27->6->7->8->28`ä»£è¡¨é…é€è·¯å¾„`1->2->3->4->5`ã€`6->7->8`
 
-**¹Ø¼üº¯Êý½âÊÍ£º**
+**å…³é”®å‡½æ•°è§£é‡Šï¼š**
 
-+ `GA_VRPTW` : Ö÷º¯ÊýÎÄ¼þ
-+ `2.xlsx` : Ä£ÐÍµÄ»ù´¡Êý¾Ý±í
-+ `init` : ¹¹Ôì³õÊ¼½â
-+ `obj_fun` : Ä¿±êº¯ÊýÖµµÄ¼ÆËã
-+ `tourment_Select` : ¶þÔª½õ±êÈüÑ¡Ôñ
-+ `Recombin` : OX½»²æ²Ù×÷
-+ `Mutate` : ±äÒì²Ù×÷
-+ `LocalSearch` : ¾Ö²¿ËÑË÷²Ù×÷
-+ `Reins` : ÖØ²åÈë×Ó´úµÄÐÂÖÖÈº
-+ `deal_Repeat` : É¾³ýÖÖÈºÖÐÖØ¸´¸öÌå
-+ `chrom_revise_1` : Èí¼þ´°µÄÐÞÕý
-+ `decode` : ½âÂë²Ù×÷
-+ `Judge` : ÅÐ¶Ï×îÓÅ½âÊÇ·ñÂú×ãÔ¼Êø
-+ `draw_Best` : ÅäËÍÂ·ÏßÍ¼µÄ»æÖÆ
-**½á¹ûÏÔÊ¾£º**
++ `GA_VRPTW` : ä¸»å‡½æ•°æ–‡ä»¶
++ `2.xlsx` : æ¨¡åž‹çš„åŸºç¡€æ•°æ®è¡¨
++ `init` : æž„é€ åˆå§‹è§£
++ `obj_fun` : ç›®æ ‡å‡½æ•°å€¼çš„è®¡ç®—
++ `tourment_Select` : äºŒå…ƒé”¦æ ‡èµ›é€‰æ‹©
++ `Recombin` : OXäº¤å‰æ“ä½œ
++ `Mutate` : å˜å¼‚æ“ä½œ
++ `LocalSearch` : å±€éƒ¨æœç´¢æ“ä½œ
++ `Reins` : é‡æ’å…¥å­ä»£çš„æ–°ç§ç¾¤
++ `deal_Repeat` : åˆ é™¤ç§ç¾¤ä¸­é‡å¤ä¸ªä½“
++ `chrom_revise_1` : è½¯ä»¶çª—çš„ä¿®æ­£
++ `decode` : è§£ç æ“ä½œ
++ `Judge` : åˆ¤æ–­æœ€ä¼˜è§£æ˜¯å¦æ»¡è¶³çº¦æŸ
++ `draw_Best` : é…é€è·¯çº¿å›¾çš„ç»˜åˆ¶
+
+**ç»“æžœæ˜¾ç¤ºï¼š**
+
 <img src="./resource/vrp1.png" width="50%">
 <img src="./resource/vrp2.png" width="50%">
 <img src="./resource/vrp3.png" width="50%">
 
 ## Facility Location
-**ÎÊÌâÃèÊö£º** ´«Í³Ñ¡Ö·ÎÊÌâ£º´Ó25¸öÐèÇóµãÖÐÑ¡3¸öÅäËÍÖÐÐÄ£¬Ê¹×Ü³É±¾×îÐ¡¡£³É±¾¹¹³É = ½¨²Ö·ÑÓÃ + ¿â´æ¹ÜÀí·Ñ + ÅäËÍÖÐÐÄÏòÐèÇóµãÔËÊäËùÐèÒªµÄÔË·Ñ£¨ÏêÏ¸µÄÊýÑ§Ä£ÐÍÔÚ`ÎÊÌâÃèÊö.doc`ÖÐ£©
+**é—®é¢˜æè¿°ï¼š** ä¼ ç»Ÿé€‰å€é—®é¢˜ï¼šä»Ž25ä¸ªéœ€æ±‚ç‚¹ä¸­é€‰3ä¸ªé…é€ä¸­å¿ƒï¼Œä½¿æ€»æˆæœ¬æœ€å°ã€‚æˆæœ¬æž„æˆ = å»ºä»“è´¹ç”¨ + åº“å­˜ç®¡ç†è´¹ + é…é€ä¸­å¿ƒå‘éœ€æ±‚ç‚¹è¿è¾“æ‰€éœ€è¦çš„è¿è´¹ï¼ˆè¯¦ç»†çš„æ•°å­¦æ¨¡åž‹åœ¨`é—®é¢˜æè¿°.doc`ä¸­ï¼‰
 
-**º¯Êý½âÊÍ£º**
-+ `main` : Ö÷º¯Êý
-+ `pop_init` : ³õÊ¼»¯ÖÖÈº
-+ `obj_fun` : Ä¿±êº¯ÊýÖµµÄ¼ÆËã
-+ `data.mat` : Êý¾ÝÎÄ¼þ
-+ `data.xlsx` : Êý¾ÝÔ´
+**å‡½æ•°è§£é‡Šï¼š**
+
++ `main` : ä¸»å‡½æ•°
++ `pop_init` : åˆå§‹åŒ–ç§ç¾¤
++ `obj_fun` : ç›®æ ‡å‡½æ•°å€¼çš„è®¡ç®—
++ `data.mat` : æ•°æ®æ–‡ä»¶
++ `data.xlsx` : æ•°æ®æº
 
 
-**½á¹ûÏÔÊ¾£º**
+**ç»“æžœæ˜¾ç¤ºï¼š**
+
 <img src="./resource/fl1.png" width="50%">
 <img src="./resource/fl2.png" width="50%">
 <img src="./resource/fl3.png" width="50%">
 
 ## amazing_problem
 + 1. `question_1.m` : 
-+ + __ÎÊÌâ£º__ 0-1000ÄÚÊÇ·ñ´æÔÚÒ»¸öÖ±½ÇÈý½ÇÐÎºÍÒ»¸öµÈÑüÈý½ÇÐÎ£¬¶þÕß¾ßÓÐÏàÍ¬µÄÖÜ³¤ºÍÃæ»ý¡¢ÇÒÖÜ³¤ºÍÃæ»ý¾ùÎªÕûÊý
-+ + __´ð°¸£º__ ´æÔÚ£¬(135,352,377)¡¢(366,366,132)
++ + __é—®é¢˜ï¼š__ 0-1000å†…æ˜¯å¦å­˜åœ¨ä¸€ä¸ªç›´è§’ä¸‰è§’å½¢å’Œä¸€ä¸ªç­‰è…°ä¸‰è§’å½¢ï¼ŒäºŒè€…å…·æœ‰ç›¸åŒçš„å‘¨é•¿å’Œé¢ç§¯ã€ä¸”å‘¨é•¿å’Œé¢ç§¯å‡ä¸ºæ•´æ•°
++ + __ç­”æ¡ˆï¼š__ å­˜åœ¨ï¼Œ(135,352,377)ã€(366,366,132)
